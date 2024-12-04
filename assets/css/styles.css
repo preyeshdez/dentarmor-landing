@@ -1,0 +1,547 @@
+/* Arboria Book (Normal) */
+@font-face {
+    font-family: 'Arboria-Book';
+    src: url('/assets/fonts/Arboria-Book.ttf') format('truetype');
+    font-weight: 400;
+    /* Peso normal */
+    font-style: normal;
+}
+
+/* Arboria Bold */
+@font-face {
+    font-family: 'Arboria-Bold';
+    src: url('/assets/fonts/Arboria-Bold.ttf') format('truetype');
+    font-weight: 700;
+    /* Negrita */
+    font-style: normal;
+}
+
+/* Arboria Black */
+@font-face {
+    font-family: 'Arboria-Black';
+    src: url('/assets/fonts/Arboria-Black.ttf') format('truetype');
+    font-weight: 900;
+    /* Extra Negrita */
+    font-style: normal;
+}
+
+
+body,
+html {
+    font-family: 'Arboria-Book', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Estilo para el fondo transparente al principio */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Animación suave */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar.transparent {
+    background-color: transparent !important;
+    box-shadow: none;
+    /* Sin sombra cuando el fondo es transparente */
+}
+
+/* Estilo para el fondo negro semitransparente cuando se hace scroll */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    /* Fondo negro semitransparente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+}
+
+/* Estilo para los enlaces de navegación en verde */
+.navbar-nav .nav-link {
+    color: white; /* Los enlaces por defecto son blancos */
+    font-weight: normal; /* Los enlaces no activos no están en negrita */
+}
+
+.navbar-nav .nav-link.active {
+    color: #28a745; /* Verde para el enlace activo */
+    font-weight: bold; /* Negrita para el enlace activo */
+}
+
+
+
+/* Estilo general del CARRUSEL */
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#carrusel1 {
+    background-image: url('/assets/img/Banner/Banner_1_no_tipo.jpg');
+}
+
+#carrusel2 {
+    background-image: url('/assets/img/Banner/Banner_2_no_tipo.jpg');
+}
+
+#carrusel3 {
+    background-image: url('/assets/img/Banner/Banner_3_no_tipo.jpg');
+}
+
+#carrusel4 {
+    background-image: url('/assets/img/Banner/Banner_4_no_tipo.jpg');
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Sombra para mejorar la legibilidad */
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-family: 'Arboria-Black', sans-serif;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    font-family: 'Arboria-Book', sans-serif;
+}
+
+/* Asegúrate de que el texto ocupe un ancho más pequeño y tenga margen */
+.carousel-text {
+    position: absolute; /* Hacemos que el texto sea posicionado de manera absoluta */
+    width: 40%; /* Ajusta el ancho del texto a un 40% del carrusel */
+    top: 40%; /* Ajusta la posición vertical del texto */
+    padding: 0 20px; /* Un pequeño relleno para que el texto no toque los bordes */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+/* Alineación del texto */
+.carousel-text.text-left {
+    left: 0; /* Alinea el texto a la izquierda */
+}
+
+.carousel-text.text-right {
+    right: 0; /* Alinea el texto a la derecha */
+}
+
+/* Estilos generales del carrusel */
+.carousel-item {
+    position: relative;
+    height: 100vh; /* Asegura que el carrusel ocupe toda la altura de la ventana */
+}
+
+.carousel-caption {
+    bottom: 0; /* Ajusta la posición del texto desde la parte inferior */
+    left: 0;
+    right: 0;
+}
+
+/* Asegura que la imagen ocupe todo el espacio del carrusel */
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Estilos NOSOTROS */
+
+#NOSOTROS {
+    color: antiquewhite;
+}
+
+#mision {
+    background-image: url(/assets/img/nosotros/Somos_dentarmor_3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#caracteristicas {
+    background-image: url(/assets/img/Caracteristicas/Caracteristicas_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tarjeta {
+    background-color: transparent;
+    border: 1px solid greenyellow;
+    color: aliceblue;
+}
+
+/* Estilo de la sección cotiza */
+#cotiza {
+    background-image: url('/assets/img/cotiza/Mano_Cotiza_Dentarmor_3.jpg');
+    /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+    color: white;
+}
+
+#cotiza img {
+    max-width: 80%;
+    height: auto;
+}
+
+#cotiza h2 {
+    font-family: 'Arboria-Black', sans-serif;
+    font-size: 2.5rem;
+}
+
+#cotiza h3 {
+    font-family: 'Arboria-Bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+#cotiza .btn {
+    font-family: 'Arboria-Bold', sans-serif;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+}
+
+/* Estilo de la sección materiales */
+#materiales {
+    background-image: url('/assets/img/materiales/Materiales_3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+    color: white;
+}
+
+/* Estilo del párrafo en la columna izquierda */
+#materiales p {
+    font-family: 'Arboria-Book', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Estilo para las imágenes en la columna derecha */
+#materiales img {
+    max-width: 80%;
+    /* Ajustar el tamaño de las imágenes */
+    height: auto;
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+/* Estilo de la sección modelos */
+#modelos {
+    background-image: url('/assets/img/modelos/fondo_modelos.jpg');
+    /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+
+/* Estilo del subtítulo principal */
+#modelos h2 {
+    font-family: 'Arboria-Black', sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo de las cards */
+#modelos .card {
+    padding: 20px;
+    color: white;
+    border: 0px;
+}
+
+#modelos .card-title {
+    font-family: 'Arboria-Bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+#modelos .card-text {
+    font-family: 'Arboria-Book', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Estilo de las imágenes de las cards */
+#modelos .card-img-top {
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la sección colaboradores */
+#colaboradores {
+    background-color: blueviolet;
+}
+
+/* Estilo del subtítulo */
+#colaboradores h2 {
+    font-family: 'arboria-black', sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo de las imágenes */
+#colaboradores img {
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para las imágenes */
+#colaboradores img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo general de la sección FAQ */
+#faq {
+    background-image: url('/assets/img/faq/fondo.jpg');
+    /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+
+/* Estilo del subtítulo */
+#faq h2 {
+    font-family: 'arboria-black', sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo de los elementos FAQ */
+.faq-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    font-family: 'arboria-book', sans-serif;
+    border: 1px solid greenyellow;
+}
+
+.faq-question {
+    cursor: pointer;
+}
+
+.faq-question h5 {
+    font-family: 'arboria-bold', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.faq-question button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.faq-question button:focus {
+    outline: none;
+}
+
+/* Estilo de la respuesta oculta */
+.collapse {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+}
+
+/* Efecto de icono cambiar entre "+" y "-" */
+.toggle-btn i {
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn[data-bs-toggle="collapse"][aria-expanded="true"] i {
+    transform: rotate(45deg);
+    /* Cambia de "+" a "-" */
+}
+
+
+/* Estilo general de la sección APOYO */
+#apoyo {
+    background-image: url('/assets/img/apoyo/fondo.jpg');
+    /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+
+/* Subtítulo sobre la primera imagen */
+.subtitulo-apoyo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: 'arboria-black', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+/* Estilo de las imágenes */
+#apoyo img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Estilo general de la sección UBICACIÓN */
+#ubicacion {
+    background-image: url('/assets/img/ubicacion/fondo.jpg');
+    /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+
+/* Estilo del ícono de ubicación */
+.icono-ubicacion {
+    width: 40px;
+    /* Tamaño pequeño del ícono */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo debajo del ícono */
+.subtitulo-ubicacion {
+    font-family: 'arboria-black', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/* Estilo general de la sección CONTACTO */
+#contacto {
+    background-color: #ffffff;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+    /* Para asegurarse de que la imagen no se desborde */
+    z-index: -1;
+}
+
+/* Subtítulo */
+.subtitulo-contacto {
+    font-family: 'arboria-black', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #60286b;
+}
+
+/* Párrafo descriptivo */
+.parrafo-contacto {
+    font-family: 'arboria-book', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #3e4347;
+}
+
+/* Formulario de contacto */
+.form-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo de los campos de entrada */
+.form-control {
+    font-family: 'arboria-book', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #fedfff;
+    border: 1px solid #60286b;
+    border-radius: 5px;
+}
+
+/* Estilo del placeholder */
+.form-control::placeholder {
+    color: #60286b;
+    opacity: 1;
+    /* Para que sea completamente visible */
+}
+
+/* Botón de enviar */
+.btn-enviar {
+    background-color: #60286b;
+    color: white;
+    font-family: 'arboria-bold', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #c140db;
+}
+
+/* Imagen decorativa en la esquina inferior derecha, por detrás de todo */
+#contacto::after {
+    content: '';
+    background-image: url('/assets/img/contacto/esquina.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    opacity: 0.8;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Estilos para el footer */
+#footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Tamaño del logo */
+.footer-logo {
+    max-width: 500px;
+    /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Tamaño de los íconos */
+.footer-icon {
+    width: 40px;
+    /* Ajusta el tamaño de los iconos */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos del texto en los iconos */
+#footer p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Alineación de los iconos */
+#footer i {
+    color: #ffffff;
+}
+
+/* Líneas de los derechos reservados */
+#footer hr {
+    border: 1px solid #ffffff;
+    width: 100%;
+    margin: 0 auto;
+}

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dentarmor</title>
+    <!-- CDN bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- JS bootstraps  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--  Estilos generales  -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logos/dentarmor_color.png" alt="DENTARMOR" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#NOSOTROS">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#materiales">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#contacto">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <header id="hero">
+        <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+    
+            <!-- Contenido del Carrusel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="carrusel1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-text text-left">
+                            <p>Protectores bucales personalizados, brindamos máxima protección y comodidad para deportistas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="carrusel2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-text text-right">
+                            <p>Protege tu sonrisa, juega con seguridad y alcanza la victoria con confianza.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="carrusel3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-text text-left">
+                            <p>Hechos por odontólogos, diseñados para proteger tu sonrisa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" id="carrusel4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-text text-right">
+                            <p>Un protector bucal es tan esencial como un casco ¡Protege tu sonrisa!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Botones de Navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </header>
+    
+    
+    
+
+    <section id="NOSOTROS" class="container-fluid p-0">
+        <div id="mision">
+            <div class="row align-items-center">
+                <!-- Columna izquierda (Imagen) -->
+                <div class="col-md-6 text-center p-5">
+                    <img src="./assets/img/nosotros/Somos_dentarmor_1.png" class="img-fluid" alt="Somos Dentarmor">
+                </div>
+
+                <!-- Columna derecha (Texto) -->
+                <div class="col-md-6 p-5">
+                    <p>
+                        Somos <span class="destacado">Dentarmor</span>, una empresa dedicada a la fabricación de
+                        protectores bucales individualizados y personalizados.
+                    </p>
+                    <p>
+                        Creemos en la importancia de la salud bucal en el deporte. Nuestro <span
+                            class="destacado">propósito</span> es ofrecer a nuestros depostistas la tranquilidad de
+                        saber que estan protegidos miesntras disfrutan de su actividad deportiva favorita. Nos
+                        enforzamos por ser mas que una marca de portectores bucales, queremos ser un aliado en la salud
+                        odontologica y el rendimeinto de nuestros clientes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sección de Características -->
+            <div id="caracteristicas" class="py-5 bg-light">
+                <div class="container p-5">
+                    <div class="row text-center">
+                        <!-- Card 1 -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card h-100 tarjeta">
+                                <div class="card-body">
+                                    <img src="./assets/img/Caracteristicas/Icono_6.png" width="50%" alt="">
+                                    <h5 class="card-title mt-3">EXCELENCIA EN CALIDAD</h5>
+                                    <p class="card-text">Nos comprometemos a ofrecer
+                                        productos de la más alta calidad,
+                                        utilizando materiales duraderos y
+                                        tecnología y técnicas apropiadas
+                                        en cada etapa de fabricación.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card h-100 tarjeta">
+                                <div class="card-body">
+                                    <img src="./assets/img/Caracteristicas/Icono_7.png" width="50%" alt="">
+                                    <h5 class="card-title mt-3">PERSONALIZACIÓN</h5>
+                                    <p class="card-text">único, por lo que nos esforzamos por
+                                        ofrecer protectores bucales
+                                        personalizados que se ajusten
+                                        perfectamente a las necesidades y
+                                        preferencias de cada uno.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card h-100 tarjeta">
+                                <div class="card-body">
+                                    <img src="./assets/img/Caracteristicas/Icono_8.png" width="50%" alt="">
+                                    <h5 class="card-title mt-3">COMPROMISO CON LA SEGURIDAD</h5>
+                                    <p class="card-text">La seguridad de nuestros clientes es
+                                        nuestra máxima prioridad. Nos
+                                        aseguramos de que nuestros
+                                        protectores bucales proporcionen
+                                        una protección óptima durante la
+                                        práctica de deportes y actividades
+                                        físicas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card h-100 tarjeta">
+                                <div class="card-body">
+                                    <img src="./assets/img/Caracteristicas/Icono_9.png" width="50%" alt="">
+                                    <h5 class="card-title mt-3">INNOVACIÓN CONSTANTE</h5>
+                                    <p class="card-text">Estamos siempre buscando nuevas
+                                        formas de mejorar nuestros
+                                        productos y procesos,
+                                        manteniéndonos a la vanguardia de
+                                        la tecnología y la investigación en
+                                        protección bucal.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <section id="cotiza" class="d-flex align-items-end text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Columna izquierda (Imagen alineada abajo a la izquierda) -->
+                <div class="col-md-6 text-start d-flex align-items-end p-0">
+                    <img src="./assets/img/Cotiza/Mano_Cotiza_Dentarmor_4.png" class="img-fluid"
+                        alt="Cotiza con nosotros">
+                </div>
+
+                <!-- Columna derecha (Subtítulos y botón alineados a la derecha) -->
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-end px-5">
+                    <h2 class="display-5">¿Listo para proteger tu sonrisa?</h2>
+                    <h3 class="fs-4"> ¡Cotiza con Dentarmor! </h3>
+                    <a href="#contacto" class="btn btn-primary btn-lg mt-3">CONTÁCTANOS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="materiales" class="d-flex align-items-center text-white">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <!-- Columna izquierda (Párrafo) -->
+                <div class="col-md-6 d-flex align-items-center justify-content-center flex-column">
+                    <p>
+                        Trabajamos con materiales de la más alta
+                        calidad. Nuestros protectores bucales son
+                        fabricados con material de la marca Erkodent.
+                        Utilizamos láminas de termoformado flexibles
+                        (Erkoflex) de Etilviniacetato de 2 y 4 mm.
+                        Ofrecemos una amplia variedad de colores,
+                        además de personalizar el diseño del protector
+                        bucal según las preferencias de cada deportista.
+                    </p>
+                    <img src="./assets/img/materiales/erkodent.png" class="img-fluid" alt="Material 2">
+                </div>
+
+                <!-- Columna derecha (Dos imágenes) -->
+                <div class="col-md-6 text-center d-flex flex-column align-items-center justify-content-center">
+                    <img src="./assets/img/materiales/Materiales_1.png" class="img-fluid mb-4" alt="Material 1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modelos" class="text-white d-flex align-items-center">
+        <div class="container py-5">
+            <!-- Subtítulo principal -->
+            <h2 class="text-center mb-5">NUESTROS MODELOS DE PROTECTORES BUCALES</h2>
+
+            <!-- Contenedor de las cards -->
+            <div class="row">
+                <!-- Card de Bajo Impacto -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-transparent text-center">
+                        <img src="./assets/img/modelos/bajo_impacto.png" class="card-img-top img-fluid"
+                            alt="Modelo Bajo Impacto">
+                        <div class="card-body">
+                            <h5 class="card-title">BAJO IMPACTO</h5>
+                            <p class="card-text">
+                                Se recomienda para
+                                deportes sin contacto,
+                                como la halterofilia o
+                                crossfit. Está formado
+                                por una capa de
+                                protección de 4mm.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Medio Impacto -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-transparent text-center">
+                        <img src="./assets/img/modelos/medio_impacto.png" class="card-img-top img-fluid"
+                            alt="Modelo Medio Impacto">
+                        <div class="card-body">
+                            <h5 class="card-title">MEDIO IMPACTO</h5>
+                            <p class="card-text">
+                                Para deportes con
+                                riesgo de contacto
+                                como el rugby,
+                                basketball, hockey o
+                                fútbol. Está formado por
+                                dos capas de protección
+                                de 4 y 2 mm.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Alto Impacto -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-transparent text-center">
+                        <img src="./assets/img/modelos/alto_impacto.png" class="card-img-top img-fluid"
+                            alt="Modelo Alto Impacto">
+                        <div class="card-body">
+                            <h5 class="card-title">ALTO IMPACTO</h5>
+                            <p class="card-text">
+                                Para deportes de
+                                combate como el boxeo
+                                o MMA. Está formado
+                                por dos capas de
+                                protección de 4mm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="colaboradores" class="text-white text-center d-flex align-items-center">
+        <div class="container py-5">
+            <!-- Subtítulo principal -->
+            <h2 class="mb-5">NUESTROS COLABORADORES</h2>
+    
+            <!-- Contenedor de imágenes -->
+            <div class="row justify-content-center">
+                <!-- Imagen 1 -->
+                <div class="col-md-4 mb-4">
+                    <img src="./assets/img/logos/linnen.png" class="img-fluid" alt="Colaborador 1">
+                </div>
+    
+                <!-- Imagen 2 -->
+                <div class="col-md-4 mb-4">
+                    <img src="./assets/img/logos/la_cueva.png" class="img-fluid" alt="Colaborador 2">
+                </div>
+    
+                <!-- Imagen 3 -->
+                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                    <img src="./assets/img/logos/bludent.png" class="img-fluid" alt="Colaborador 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="faq" class="text-white text-center d-flex align-items-center">
+        <div class="container py-5">
+            <!-- Subtítulo principal -->
+            <h2 class="mb-5">Preguntas Frecuentes</h2>
+    
+            <!-- Contenedor de preguntas -->
+            <div class="accordion" id="faqAccordion">
+                <!-- Pregunta 1 -->
+                <div class="faq-item">
+                    <div class="faq-question d-flex justify-content-between align-items-center">
+                        <h5>¿Que es un protector bucal?</h5>
+                        <button class="toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                    <div id="faq1" class="collapse text-start">
+                        <p>Es un dispositivo dental de protección que ayuda a prevenir lesiones en tus dientes, encías, labios, lengua, mejillas y mandíbula mientras practicas deporte.</p>
+                    </div>
+                </div>
+    
+                <!-- Pregunta 2 -->
+                <div class="faq-item">
+                    <div class="faq-question d-flex justify-content-between align-items-center">
+                        <h5>¿Por qué debería usar un protector bucal?</h5>
+                        <button class="toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                    <div id="faq2" class="collapse text-start">
+                        <p>¡Los accidentes ocurren! Si tu o tu hijo practican un deporte con riesgo de contacto, deberían siempre usar un protector bucal para prevenir posibles lesiones en tu cavidad oral.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Pregunta 3 -->
+                <div class="faq-item">
+                    <div class="faq-question d-flex justify-content-between align-items-center">
+                        <h5>¿Cuál es la diferencia entre un protector bucal y una férula nocturna?</h5>
+                        <button class="toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                    <div id="faq3" class="collapse text-start">
+                        <p>Ambos tienen como una de sus finalidades proteger tus dientes pero la diferencia es que un protector bucal se confecciona con un material blando para absorber golpes y una férula se fabrica con materiales rígidos. NUNCA uses un protector bucal en la noche para dormir y JAMÁS uses una férula rígida como protector bucal deportivo.</p>
+                    </div>
+                </div>
+    
+                <!-- Pregunta 4 -->
+                <div class="faq-item">
+                    <div class="faq-question d-flex justify-content-between align-items-center">
+                        <h5>¿Por qué Dentarmor es mejor opción que un protector bucal estándar?</h5>
+                        <button class="toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                    <div id="faq4" class="collapse text-start">
+                        <p>Tu protector bucal Dentarmor es fabricado a medida a partir de una impresión dental de tu boca, por lo tanto el ajuste es perfecto, es más cómodo y ofrece mucha mayor protección; por lo que no dificulta tu respiración, tu habla o tu rendimiento.</p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 5 -->
+                <div class="faq-item">
+                    <div class="faq-question d-flex justify-content-between align-items-center">
+                        <h5>Me faltan algunos dientes ¿Puedo usar un protector bucal?</h5>
+                        <button class="toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                    <div id="faq5" class="collapse text-start">
+                        <p>¡Si puedes! La falta de dientes no es impedimento para confeccionar un protector bucal. Lo realmente importante es que tu caso sea analizado y planificado correctamente por nuestros odontólogos.</p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 6 -->
+                <div class="faq-item">
+                    <div class="faq-question d-flex justify-content-between align-items-center">
+                        <h5>¿Cuánto durará mi protector bucal?</h5>
+                        <button class="toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                    <div id="faq6" class="collapse text-start">
+                        <p>Si no hay cambios en tu dentadura y lo cuidas apropiadamente los materiales con los que fabricamos nuestros protectores bucales están diseñados para durar y durar. Si tienes menos de 14 años o has tenido cambios de algún tipo en tu dentadura, puede que que el que estés usando actualmente ya no se ajuste perfectamente ni sea cómodo, por lo que es posible que debas cambiarlo. Siempre es importante revisar el estado de tu protector bucal para determinar si es necesario cambiarlo. Nosotros recomendamos cambiarla cada año.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 7 -->
+                <div class="faq-item">
+                    <div class="faq-question d-flex justify-content-between align-items-center">
+                        <h5>¿Cómo obtengo mi protector bucal dentarmor?</h5>
+                        <button class="toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                    <div id="faq7" class="collapse text-start">
+                        <p>Muy fácil. Solo debes contactarnos a nuestro whatsapp o redes sociales. Se te agendará una hora para realizar un diagnóstico y la toma de modelos dentales. Luego deberás esperar aproximadamente una semana para fabricar tu protector bucal. Finalmente se te agendará otra hora para la entrega de tu protector bucal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 8 -->
+                <div class="faq-item">
+                    <div class="faq-question d-flex justify-content-between align-items-center">
+                        <h5>Actualmente estoy en tratamiento de ortodoncia ¿Puedo usar un protector bucal?</h5>
+                        <button class="toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                    <div id="faq8" class="collapse text-start">
+                        <p>Definitivamente deberías usar uno. Recomendamos consultar a tu ortodoncista. Tenemos disponible un sistema de Scanner 3D para evitar la toma de impresiones convencionales. Recuerda que debido a tu tratamiento, la posición de tus dientes está cambiando constantemente, por lo que el protector bucal solo corresponderá al estado actual en el que se tomó el registro, por lo que deberás cambiar tu protector bucal más seguido y al finalizar tu tratamiento.</p>
+                    </div>
+                </div>
+
+                <!-- Pregunta 9 -->
+                <div class="faq-item">
+                    <div class="faq-question d-flex justify-content-between align-items-center">
+                        <h5>¿Cómo elegir el protector bucal más adecuado para mi?</h5>
+                        <button class="toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+                            <i class="bi bi-plus-lg"></i>
+                        </button>
+                    </div>
+                    <div id="faq9" class="collapse text-start">
+                        <p>El modelo a elegir dependerá del nivel de protección que busques en relación al deporte que practiques. En general, el modelo de bajo impacto es para deportes en los que no hay contacto, por ejemplo halterofilia o crossfit. El modelo de medio impacto puede ser utilizado en deportes como el básquetbol, rugby o fútbol. Finalmente el modelo de alto impacto se utiliza para deportes de combate como el boxeo o MMA. De todos modos, nosotros te guiaremos para realizar una buena elección.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="apoyo" class="text-white text-center d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <!-- Columna de la primera imagen con subtítulo -->
+                <div class="col-md-6 position-relative">
+                    <h5 class="subtitulo-apoyo">Proyecto apoyado por:</h5>
+                    <img src="./assets/img/apoyo/fometo_losrios.png" alt="Logo Apoyo 1" class="img-fluid">
+                </div>
+    
+                <!-- Columna de la segunda imagen -->
+                <div class="col-md-6">
+                    <img src="./assets/img/apoyo/incubatec.png" alt="Logo Apoyo 2" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="text-center text-white d-flex align-items-center py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center py-5">
+                <!-- Imagen pequeña tipo ícono -->
+                <div class="col-12">
+                    <img src="./assets/img/ubicacion/icono.png" alt="Ícono de ubicación" class="icono-ubicacion">
+                </div>
+    
+                <!-- Subtítulo debajo de la imagen -->
+                <div class="col-12">
+                    <h5 class="subtitulo-ubicacion">Hechos en VALDIVIA, Región de Los Ríos.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="text-center text-white d-flex align-items-center">
+        <div class="container">
+            <!-- Subtítulo -->
+            <h2 class="subtitulo-contacto">Contáctanos</h2>
+    
+            <!-- Párrafo descriptivo -->
+            <p class="parrafo-contacto">
+                Si tienes alguna pregunta o necesitas más información, no dudes en escribirnos. Estaremos encantados de ayudarte.
+            </p>
+    
+            <!-- Formulario de contacto -->
+            <form action="#" method="post" class="form-contacto">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer id="footer" class="bg-dark text-white">
+        <!-- Logo en la parte superior -->
+        <div class="text-center mb-4">
+            <img src="./assets/img/logos/dentarmor_blanco.png" alt="Logo" class="img-fluid footer-logo">
+        </div>
+    
+        <!-- Íconos de contacto -->
+        <div class="row text-center mb-4 d-flex justify-content-center">
+            <!-- Email -->
+            <div class="col-md-2">
+                <img src="./assets/img/Iconos/gmail.png" alt="" class="footer-icon">
+                <p>dentarmor@gmail.com</p>
+            </div>
+            <!-- WhatsApp -->
+            <div class="col-md-2">
+                <img src="./assets/img/Iconos/whatsapp.png" alt="" class="footer-icon">
+                <p>+56 9 1234 5678</p>
+            </div>
+            <!-- Ubicación -->
+            <div class="col-md-2">
+                <img src="./assets/img/Iconos/ubicacion.png" alt="" class="footer-icon">
+                <p>Valdivia, Chile</p>
+            </div>
+        </div>
+    
+        <!-- Icono de Instagram -->
+        <div class="text-center mb-4">
+            <a href="https://www.instagram.com/dentarmor" target="_blank">
+                <img src="./assets/img/Iconos/instagram.png" alt="" class="footer-icon">
+            </a>
+        </div>
+    
+        <!-- Derechos reservados -->
+        <div class="text-center p-3">
+            <hr class="text-white">
+            <small>&copy; 2024 Dentarmor. Todos los derechos reservados.</small>
+        </div>
+    </footer> 
+    
+</body>
+
+<script src="./assets/js/faq.js"></script>
+<script src="./assets/js/navbar.js"></script>
+
+</html>
