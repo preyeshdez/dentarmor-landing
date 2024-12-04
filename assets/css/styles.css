@@ -1,7 +1,7 @@
 /* Arboria Book (Normal) */
 @font-face {
     font-family: 'Arboria-Book';
-    src: url('assets/fonts/Arboria-Book.ttf') format('truetype');
+    src: url('../assets/fonts/Arboria-Book.ttf') format('truetype');
     font-weight: 400;
     /* Peso normal */
     font-style: normal;
@@ -10,7 +10,7 @@
 /* Arboria Bold */
 @font-face {
     font-family: 'Arboria-Bold';
-    src: url('assets/fonts/Arboria-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/Arboria-Bold.ttf') format('truetype');
     font-weight: 700;
     /* Negrita */
     font-style: normal;
@@ -19,7 +19,7 @@
 /* Arboria Black */
 @font-face {
     font-family: 'Arboria-Black';
-    src: url('assets/fonts/Arboria-Black.ttf') format('truetype');
+    src: url('../assets/fonts/Arboria-Black.ttf') format('truetype');
     font-weight: 900;
     /* Extra Negrita */
     font-style: normal;
