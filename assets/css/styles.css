@@ -77,19 +77,19 @@ html {
 }
 
 #carrusel1 {
-    background-image: url('/assets/img/Banner/Banner_1_no_tipo.jpg');
+    background-image: url('../assets/img/Banner/Banner_1_no_tipo.jpg');
 }
 
 #carrusel2 {
-    background-image: url('/assets/img/Banner/Banner_2_no_tipo.jpg');
+    background-image: url('../assets/img/Banner/Banner_2_no_tipo.jpg');
 }
 
 #carrusel3 {
-    background-image: url('/assets/img/Banner/Banner_3_no_tipo.jpg');
+    background-image: url('../assets/img/Banner/Banner_3_no_tipo.jpg');
 }
 
 #carrusel4 {
-    background-image: url('/assets/img/Banner/Banner_4_no_tipo.jpg');
+    background-image: url('../assets/img/Banner/Banner_4_no_tipo.jpg');
 }
 
 .carousel-caption {
